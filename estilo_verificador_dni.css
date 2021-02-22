@@ -1,46 +1,43 @@
 body {
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #ffa040;
 }
 
 h1 {
-	text-align: center;
+  text-align: center;
   color: #0066cc;
-  text-shadow: 1px 1px #1c2b4f ;
+  text-shadow: 1px 1px #1c2b4f;
 }
 
 .web {
-	text-align: center;
+  text-align: center;
   color: black;
-	font-weight: bold;
-
+  font-weight: bold;
 }
 
-.info{
-	text-align: center;
-	color: black;
-
+.info {
+  text-align: center;
+  color: black;
 }
 
 .dni {
-	text-align: center;
+  text-align: center;
 }
 
-.inputdni{
-	text-align: center;
-
+.inputdni {
+  text-align: center;
 }
 
 input[type="text"] {
   min-width: 300px;
   padding: 0.5em;
   font-size: 1.2em;
-	border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
 }
 
 input[type="submit"] {
   padding: 0.5em;
   font-size: 1.2em;
-	background-color: #0066cc;
-	border-radius: 15px 15px 15px 15px;
+  background-color: #0066cc;
+  border-radius: 15px 15px 15px 15px;
 }
