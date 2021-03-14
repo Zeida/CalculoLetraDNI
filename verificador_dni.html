@@ -12,18 +12,83 @@
   <h1>Verificador DNI</h1>
   <p class="web">En esta página web usted podrá verificar si la letra de su dni coincide
     con el número de acuerdo con la web del Ministerio del Interior.</p>
-  <div class="dni">Introduzca el número y la letra de su DNI en el siguiente recuadro:</div>
+  <div class="dni">Introduzca el número y la letra de su DNI en los siguientes recuadros\:</div>
   <br>
+
   <div class="inputdni">
-    <form action="javascript:verificarDNI();">
-      <input type="text" name="dni" placeholder="Introduzca su DNI" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe introducir 8 números y una letra" />
-      <input type="submit" value="Enviar" />
+    <form action="javascript:validar_dni();" id="formulariodni">
+      <input type="text" id="dninumero" name="dninumero" placeholder="Introduzca el numero de su DNI" />
+      <input type="text" id="dniletra" name="dniletra" placeholder="Introduzca la letra de su DNI" />
+      <input type="submit" value="Enviar" id="validacion" name="validacion" />
     </form>
   </div>
   <br><br>
+  <div class="info" id="info"></div>
+  <div class="letra" id="letra"></div>
+
+  <br><br>
   <p class="info">De acuerdo con la web del Ministerio del Interior el algoritmo para calcular<br>
-     el DNI es el siguiente; se divide el número entre 23 y el resto se sustituye<br>
-     por una letra que se determina por inspección mediante la siguiente tabla:</p>
+    el DNI es el siguiente; se divide el número entre 23 y el resto se sustituye<br>
+    por una letra que se determina por inspección mediante la siguiente tabla:</p>
+
+  <div>
+    <table class="default">
+      <tr>
+        <th>Resto</th>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+
+      </tr>
+      <tr>
+        <th>Letra</th>
+        <td>T</td>
+        <td>R</td>
+        <td>W</td>
+        <td>A</td>
+        <td>G</td>
+        <td>M</td>
+        <td>Y</td>
+        <td>F</td>
+        <td>P</td>
+        <td>D</td>
+        <td>X</td>
+        <td>B</td>
+        <td>N</td>
+        <td>J</td>
+        <td>Z</td>
+        <td>S</td>
+        <td>Q</td>
+        <td>V</td>
+        <td>H</td>
+        <td>L</td>
+        <td>C</td>
+        <td>K</td>
+        <td>E</td>
+
+      </tr>
+    </table>
+  </div>
 
 </body>
 
